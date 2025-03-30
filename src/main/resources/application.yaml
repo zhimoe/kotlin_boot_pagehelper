@@ -13,3 +13,10 @@ spring:
     init:
       # DatabaseInitializationMode
       mode: never
+logging:
+  level:
+    org.springframework.web: "info"
+    com.example.demo.mapper.CountryMapper: debug
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
